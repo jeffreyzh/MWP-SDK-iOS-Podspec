@@ -1,0 +1,1 @@
+# MWP-SDK-iOS-Podspec
