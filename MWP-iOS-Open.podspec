@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MWP-iOS-Open"
-  s.version      = "0.0.2.1"
+  s.version      = "0.0.3.1"
   s.summary      = "MWP SDK for iOS."
 
   # This description is used to generate tags and improve search results.
@@ -138,10 +138,10 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'SDK' do |ss|
-    # ss.public_header_files = 'MWP-iOS-Open/Classes/SDK/**/*.h'
+    ss.private_header_files = 'MWP-iOS-Open/Classes/SDK/**/*.h'
     ss.source_files = 'MWP-iOS-Open/Classes/SDK/**/*'
     ss.dependency 'MWP-iOS-Open/__default__'
-    ss.dependency 'MLComm'
+    ss.dependency 'MLComm-Open'
     ss.dependency 'AFNetworking'
   end
 
