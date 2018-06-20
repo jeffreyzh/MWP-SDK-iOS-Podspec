@@ -93,9 +93,6 @@ Pod::Spec.new do |s|
   # s.source_files  = "Classes", "Classes/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = "MWP-iOS-Open/Classes/Interface/*.h"
-
-
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  A list of resources included with the Pod. These are copied into the
@@ -141,7 +138,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'SDK' do |ss|
-    ss.public_header_files = 'MWP-iOS-Open/Classes/SDK/**/*.h'
+    # ss.public_header_files = 'MWP-iOS-Open/Classes/SDK/**/*.h'
     ss.source_files = 'MWP-iOS-Open/Classes/SDK/**/*'
     ss.dependency 'MWP-iOS-Open/__default__'
     ss.dependency 'MLComm'
