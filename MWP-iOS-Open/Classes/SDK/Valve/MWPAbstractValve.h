@@ -1,7 +1,7 @@
 
 
 #import <Foundation/Foundation.h>
-#import <WTPipelineForOC/MGJWTValve.h>
+#import "MGJWTValve.h"
 #import "RemoteContext.h"
 #import "RemoteConstant.h"
 

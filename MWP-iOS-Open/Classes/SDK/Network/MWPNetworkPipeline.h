@@ -3,7 +3,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MGJWTPipeline.h"
+#import <WTPipelineForOC/MGJWTPipeline.h>
 
 
 @interface MWPNetworkPipeline : NSObject <MGJWTPipeline>

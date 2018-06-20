@@ -2,7 +2,7 @@
 #import <Foundation/Foundation.h>
 #import "RemoteBuild.h"
 #import "MWPProvider.h"
-#import "MGJWTCancelable.h"
+#import <WTPipelineForOC/MGJWTCancelable.h>
 
 @class MGJWTDefaultPipeline;
 @class MWPPipelineCancelableDelegate;
