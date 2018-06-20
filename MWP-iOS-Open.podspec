@@ -93,7 +93,7 @@ Pod::Spec.new do |s|
   # s.source_files  = "Classes", "Classes/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  s.public_header_files = "MWP-iOS-Open/Classes/Interface/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -136,9 +136,14 @@ Pod::Spec.new do |s|
 
   s.default_subspecs = 'SDK', 'Interface'
 
+  s.subspec '__default__' do |ss|
+     ss.vendored_libraries = 'libMWP-iOS-Open.a'
+  end
+
   s.subspec 'SDK' do |ss|
     ss.public_header_files = 'MWP-iOS-Open/Classes/SDK/**/*.h'
     ss.source_files = 'MWP-iOS-Open/Classes/SDK/**/*'
+    ss.dependency 'MWP-iOS-Open/__default__'
     ss.dependency 'MLComm'
     ss.dependency 'AFNetworking'
   end
@@ -146,6 +151,7 @@ Pod::Spec.new do |s|
   s.subspec 'Interface' do |ss|
     ss.public_header_files = 'MWP-iOS-Open/Classes/Interface/*.h'
     ss.source_files = 'MWP-iOS-Open/Classes/Interface/*'
+    ss.dependency 'MWP-iOS-Open/__default__'
   end
 
 
