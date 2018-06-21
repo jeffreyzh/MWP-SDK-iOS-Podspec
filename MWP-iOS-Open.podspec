@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MWP-iOS-Open"
-  s.version      = "0.0.3.1"
+  s.version      = "0.0.5.1"
   s.summary      = "MWP SDK for iOS."
 
   # This description is used to generate tags and improve search results.
